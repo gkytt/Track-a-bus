@@ -1,0 +1,54 @@
+body {
+    background-color: #89BBFE;    
+    font-family: 'DejaVu Sans Mono', monospace;
+    text-align: center;
+}
+
+img {
+    padding: 5%;
+}
+
+table {
+    border: 5px solid #F4FAFF;
+    width: 100% ;
+    background-color: #DEE7E7;
+}
+
+td {
+    padding: 1%
+}
+
+h1, h2 {
+    font-family: 'Century Gothic', sans-serif;    
+}
+
+h1 {
+    font-size: 300%
+}
+
+hr {
+    border: solid #F4FAFF;
+}
+
+button {
+    background-color: #DEE7E7;
+    border: 5px solid #F4FAFF;
+    font-family: 'Century Gothic', sans-serif;    
+    padding: 1%
+}
+
+#heading {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#test {
+    text-align: left;
+}
+
+#busTimes{
+    width: 68%
+}

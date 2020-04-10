@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Track-a-bus</title>
+    </head>
+    <body>
+        <br>
+
+        <div id="heading">
+            <img src="https://image.flaticon.com/icons/svg/175/175010.svg" width=15%>
+            <h1>Track-a-bus</h1>
+        </div>
+        <hr>
+            <h2>See the live location of your bus!</h2>
+        
+            <table>
+            <tr>
+                <th><img src="https://image.flaticon.com/icons/svg/678/678457.svg" width="100" height="100"></th>
+                <th><img src="https://image.flaticon.com/icons/svg/711/711170.svg" width="100" height="100"></th>
+                <th><img src="https://image.flaticon.com/icons/svg/1825/1825540.svg" width="100" height="100"></th>
+            </tr>
+            <tr>
+                <td>Insert your bus number</td>
+                <td>Live location</td>
+                <td>Easy to use</td>
+            </tr>
+            <tr>
+                <td>The app shows, when the nearest bus arrives.</td>
+                <td>You can track your bus on the map.</td>
+                <td>We have made it as comfortable to use as possible.</td>
+            </tr>
+            </table>
+                
+        <br>
+        <br>
+        <button>
+            <a href="https://www.figma.com/proto/Nvx6jN7ROvkwnLiOrT8TU5/Untitled?node-id=1%3A2&scaling=scale-down"> <h2> Open Figma!</h2> </a> 
+        </button>
+        
+        <br>
+        <br>
+        <hr>
+        
+        <div id="test">
+            
+            <h2>See some of the bus arrival times here:</h2>
+            <h3>Stop: Laulupeo</h3>
+            <button onclick="genBusTimes()">Search</button>
+            
+            <br>
+            <br>
+            
+            <table id="busTimes">
+                <tr>
+                    <th>Bus number</th>
+                    <th>Route</th>
+                    <th>Arriving in (minutes)</th>
+                </tr>
+                <tr>
+                    <td>67</td>
+                    <td>Seli - Estonia</td>
+                    <td id="arrivalTime1">-</td>
+                </tr>
+                <tr>
+                    <td>68</td>
+                    <td>Priisle - Estonia</td>
+                    <td id="arrivalTime2">-</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>Estonia - Priisle</td>
+                    <td id="arrivalTime3">-</td>
+                </tr>
+            </table>
+        </div>
+        
+        <br>
+        <br>
+        
+        <script>
+            
+            function genBusTimes() {
+                var arrivingIn1 = Math.floor(Math.random() * 20) + 1;
+                document.getElementById("arrivalTime1").innerHTML = arrivingIn1;
+                
+                var arrivingIn2 = Math.floor(Math.random() * 20) + 1;
+                document.getElementById("arrivalTime2").innerHTML = arrivingIn2;
+                
+                var arrivingIn3 = Math.floor(Math.random() * 20) + 1;
+                document.getElementById("arrivalTime3").innerHTML = arrivingIn3;
+            }
+            
+        </script>
+    </body>
+</html>
